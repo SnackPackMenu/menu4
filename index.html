@@ -779,13 +779,32 @@ body {
   .snack-pack-pacman-section p { font-size: 18px; }
   .pacman-button { font-size: 20px; }
 }
-</style></head>
+</style><script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
 <body><div class="shimmer-beam"></div>
 <div style="max-width:900px;margin:20px auto;padding:18px;border:2px solid cyan;border-radius:12px;text-align:center;background:rgba(0,0,0,.9);box-shadow:0 0 15px cyan;">
 <h2 style="color:cyan;margin:0 0 10px 0;">🕒 SHOP HOURS</h2>
 <p style="margin:6px 0;font-size:20px;"><strong>Mon–Fri:</strong> 3PM – 12AM</p>
 <p style="margin:6px 0;font-size:20px;"><strong>Sat–Sun:</strong> 8AM – 12AM</p>
-<a href="https://buy.stripe.com/bJe7sK88EbN22yh10O4gg0o" style="display:inline-block;margin-top:12px;padding:14px 28px;background:cyan;color:black;font-weight:bold;text-decoration:none;border-radius:10px;box-shadow:0 0 12px cyan;">💳 PAY HERE</a>
+
+<div style="max-width:900px;margin:18px auto;padding:18px;border:2px solid #00ffff;border-radius:12px;text-align:center;background:rgba(0,0,0,.92);box-shadow:0 0 15px #00ffff;">
+  <h2 style="color:#00ffff;margin:0 0 12px 0;">💳 COMPLETE PAYMENT</h2>
+  <p style="color:#fff;margin:0 0 14px 0;font-size:18px;font-weight:bold;">📲 Place your order on Signal first. Once your total is confirmed, enter the amount below to complete payment.</p>
+  <div style="display:flex;justify-content:center;align-items:center;min-height:70px;">
+    <stripe-buy-button
+      buy-button-id="buy_btn_1Thr0mBddUVI5Kr6UPMweeiX"
+      publishable-key="pk_live_51Nwx3fBddUVI5Kr6ahCxIXZ7k782nmxvFVt1yrg5eyQf5OFfgHFy45LBBmn47fw6nkGgzrssXeYhHAbjsUc3RsG100dRNq303x">
+    </stripe-buy-button>
+  </div>
+  
+</div>
+
+
+<div style="margin-top:12px;text-align:center;">
+
+
+</div>
+
 
 <div style="margin-top:15px;padding-top:12px;border-top:1px solid cyan;">
 <h3 style="color:#39ff14;margin:0 0 8px 0;">🚗 DELIVERY INFO</h3>
@@ -889,7 +908,7 @@ body {
        box-shadow:0 0 18px #00ffff, 0 0 35px rgba(0,255,255,0.7);
        animation:pulseGlow 2s infinite;
      " target="_blank">
-     💳 PAY HERE
+     💳 COMPLETE PAYMENT
   </a>
 </div>
 <div class="tier neon-red sidebar-glow neon-yellow fade-in-pop tier-pulse" style=" animation-delay: 2.2s;">
